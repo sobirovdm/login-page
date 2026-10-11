@@ -1,0 +1,102 @@
+/* Stillar https://jigsaw.w3.org/css-validator/ sayti orqali validatsiyadan o'tkazildi. */
+
+/* GLOBAL STYLES */
+html { box-sizing: border-box; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 1.5rem;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CARD CONTAINER */
+.form-card {
+    width: 450px;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.form,
+.form__title,
+.form__group { margin-bottom: 1.5rem; }
+
+.form__title { text-align: center; }
+
+.form__input {
+    width: 100%;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.checkbox {
+    margin: 2rem 0;
+
+    gap: 0.5rem;
+    display: flex;
+    align-items: start;
+}
+
+.checkbox__input { margin-top: 0.5rem; }
+
+.checkbox__label a { color: hsl(217, 90%, 50%); }
+
+.submit-btn {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #0f9d58;
+}
+
+.submit-btn:hover { opacity: 0.8; }
+
+/* ICONS */
+.icons__text {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.icons__list {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.icons__link { 
+    display: inline-block;
+    
+    img { display: block; }
+}
